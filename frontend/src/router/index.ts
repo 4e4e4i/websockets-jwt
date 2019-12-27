@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router, {NavigationGuard, RouteConfig} from 'vue-router';
-import {RouterNames} from '@/router/routerNames';
+import {RouterNames} from './routerNames';
 import Login from '../views/Login.vue';
 import Main from '../views/Main.vue';
-import { securityGuardRoutes } from '@/router/routerGuard';
+import { securityGuardRoutes } from './routerGuard';
 
 Vue.use(Router);
 

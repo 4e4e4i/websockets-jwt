@@ -1,4 +1,4 @@
-import { UserInfoData, UserInfoStorageService } from '@/services/UserInfoStorageService';
+import { UserInfoData, UserInfoStorageService } from './UserInfoStorageService';
 
 export class UserInfoLocalStorageImpl implements UserInfoStorageService {
     private readonly localStorageKey: string;

@@ -1,4 +1,4 @@
-import { LoginService, LoginModel } from '@/services/LoginService';
+import { LoginService, LoginModel } from '../LoginService';
 import { AxiosResponse } from 'axios';
 import axios from 'axios';
 

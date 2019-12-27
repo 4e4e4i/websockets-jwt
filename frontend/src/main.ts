@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-import {routerFactory} from '@/router';
-import './registerServiceWorker';
+import {routerFactory} from './router';
 import {AxiosServiceImpl} from '@/services/axios/AxiosServiceImpl';
 import { LoginService } from '@/services/LoginService';
 import makeStore from '@/store';

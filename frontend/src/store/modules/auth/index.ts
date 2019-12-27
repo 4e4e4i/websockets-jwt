@@ -2,7 +2,7 @@ import {ActionTree, Module, MutationTree} from 'vuex';
 import {AuthState} from './types';
 import action from './actions-names';
 import mutation from './mutations-names';
-import {RootState} from '../../types';
+import {RootState} from '@/store/types';
 import { LoginService } from '@/services/LoginService';
 import {UserInfoLocalStorageImpl} from '@/services/UserInfoLocalStorageImpl';
 import {UserInfoData, UserInfoStorageService} from '@/services/UserInfoStorageService';

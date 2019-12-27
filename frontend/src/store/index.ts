@@ -1,12 +1,15 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import {AUTH_MODULE} from '@/store/modules/modules_names';
-import { AxiosServiceImpl } from '@/services/axios/AxiosServiceImpl';
+import {AUTH_MODULE} from './modules/modules_names';
+import {AxiosServiceImpl} from '@/services/axios/AxiosServiceImpl';
 import makeAuthModule from './modules/auth';
+import {RootState} from '@/store/types';
 
 Vue.use(Vuex);
 
-const state = {};
+const state: RootState = {
+    statuses: [],
+};
 
 const getters = {};
 
