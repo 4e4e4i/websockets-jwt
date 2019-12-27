@@ -6,9 +6,9 @@ interface LoginModel {
 }
 
 interface LoginService {
-    login(request: LoginModel): Promise<AxiosResponse>;
+    login(request: LoginModel): Promise<void>;
 
-    logout(): Promise<AxiosResponse>;
+    logout(): Promise<void>;
 }
 
 export {LoginService, LoginModel};

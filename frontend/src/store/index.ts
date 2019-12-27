@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import {AUTH_MODULE} from './modules/modules_names';
-import {AxiosServiceImpl} from '@/services/axios/AxiosServiceImpl';
+import {AxiosServiceImpl} from '@/services/impl/axios/AxiosServiceImpl';
 import makeAuthModule from './modules/auth';
 import {RootState} from '@/store/types';
 

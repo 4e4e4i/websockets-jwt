@@ -1,4 +1,4 @@
-import { LoginService, LoginModel } from '../LoginService';
+import { LoginService, LoginModel } from '../../LoginService';
 import { AxiosResponse } from 'axios';
 import axios from 'axios';
 
@@ -12,7 +12,7 @@ class AxiosServiceImpl implements LoginService {
         this.baseUrl = baseUrl;
     }
 
-    public login(request: LoginModel): Promise<AxiosResponse> {
+    public login(request: LoginModel): Promise<any> {
         const url = this.baseUrl + '/login';
         const response: Promise<AxiosResponse> =
             axios.request({
@@ -23,7 +23,7 @@ class AxiosServiceImpl implements LoginService {
         return response;
     }
 
-    public logout(): Promise<AxiosResponse> {
+    public logout(): Promise<any> {
         const url = this.baseUrl + '/logout';
         const response: Promise<AxiosResponse> =
             axios.request({
